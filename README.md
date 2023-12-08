@@ -4,8 +4,9 @@
 
 ## Contenido
 
-- [Proyecto 1: CRUD Cats with TypeORM and Docker](./CRUD-cats-typeorm-docker)
-- [Enlaces Útiles](./Recursos)
+- [Proyecto 1: CRUD Cats with TypeORM and Docker](./crud-cats-typeorm-docker/)
+  - Guia de referencia: [Link](https://bluuweb.dev/nestjs/crud-mysql.htm)
+- [Enlaces Útiles](./Recursos/readme.md)
 
 ## Cómo Contribuir
 
