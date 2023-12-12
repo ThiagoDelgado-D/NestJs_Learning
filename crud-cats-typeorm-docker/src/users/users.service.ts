@@ -17,10 +17,10 @@ export class UsersService {
 
   findAll() {
     return this.userRepository.findAndCount();
-  } 
+  }
 
   findOneByEmail(email: string) {
-    return this.userRepository.findOneBy({email})
+    return this.userRepository.findOneBy({ email });
   }
 
   findOne(id: number) {
