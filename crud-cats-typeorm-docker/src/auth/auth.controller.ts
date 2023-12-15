@@ -3,7 +3,7 @@ import { AuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 import { Request } from 'express';
-import { Role } from './enums/role.enums';
+import { Role } from '../common/enums/role.enums';
 import { Auth } from './decorators/auth.decorator';
 
 interface RequestWithUser extends Request {
@@ -35,6 +35,6 @@ export class AuthController {
   @Get('profile')
   @Auth(Role.USER)
   async profile(@Req() req: RequestWithUser) {
-    return this.authService.profile(req.user);
+    return this.authService.profile(  req.user);
   }
 }
