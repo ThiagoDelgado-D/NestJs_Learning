@@ -17,7 +17,7 @@ import { AuthModule } from './auth/auth.module';
       password: 'root',
       database: 'db_crud',
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: false,
     }),
     ConfigModule.forRoot(),
     BreedsModule,
