@@ -20,7 +20,16 @@ import { AuthModule } from './auth/auth.module';
       password: process.env.MYSQL_PASSWORD,
       database: process.env.MYSQL_DATABASE,
       autoLoadEntities: true,
-      synchronize: false,
+      synchronize: true,
+      ssl: process.env.MYSQL_SSL === 'true',
+      extra: {
+        ssl:
+          process.env.MYSQL_SSL === 'true'
+            ? {
+                rejectUnauthorized: false,
+              }
+            : null,
+      },
     }),
     BreedsModule,
     UsersModule,
